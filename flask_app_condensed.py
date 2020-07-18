@@ -41,7 +41,7 @@ db = "dem3ie1ftdkrap"
 # passwd = "postgres"
 # db = "Proj2_stock_data"
 
-engine = create_engine(f'postgresql://{user}:{passwd}@{host}:{port}/{db}')
+engine = create_engine(f'postgres://{user}:{passwd}@{host}:{port}/{db}')
 connection = engine.connect()
 
 #Write each stock history to a PostgreSQL table in the Proj2_stock_data database
