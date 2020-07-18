@@ -29,10 +29,11 @@
 <body>
     <div id="container"></div>
     <a class="btn btn-primary" href="/" role="button">Link</a>
+
     <script>
         anychart.onDocumentReady(function() {
             anychart.data.loadJsonFile(
-                'http://127.0.0.1:5000/hsi/',
+                '/ssec/',
                 function(data) {
 
                     // create data table on loaded data
@@ -69,7 +70,7 @@
                         .stroke('1.5 #455a64');
 
                     var series = plot.candlestick(mapping);
-                    series.name('HANG SENG');
+                    series.name('Shanghai');
                     series.legendItem().iconType('rising-falling');
 
                     // create scroller series with mapped data
