@@ -29,11 +29,17 @@ ssec_hist = ssec.history(period="max")
 
 #Connect to PostgreSQL
 
-host = "ec2-35-173-94-156.compute-1.amazonaws.com"
-user = "gcarnvivxankln"
+# host = "ec2-35-173-94-156.compute-1.amazonaws.com"
+# user = "gcarnvivxankln"
+# port = "5432"
+# passwd = "79875b57e6188998190e0cbea8a49e363a67bf437e255d67bd549ab10ffa30c1"
+# db = "dem3ie1ftdkrap"
+
+host = "localhost"
+user = "postgres"
 port = "5432"
-passwd = "79875b57e6188998190e0cbea8a49e363a67bf437e255d67bd549ab10ffa30c1"
-db = "dem3ie1ftdkrap"
+passwd = "postgres"
+db = "Proj2_stock_data"
 
 engine = create_engine(f'postgresql://{user}:{passwd}@{host}:{port}/{db}')
 connection = engine.connect()
